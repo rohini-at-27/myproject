@@ -19,6 +19,11 @@
         "Cash_on_delivery",
         "NetBanking"
       ]
+    },
+    "Transaction_id": {
+      "type": "integer",
+      "unique": true,
+      "required": true
     }
   }
 }
