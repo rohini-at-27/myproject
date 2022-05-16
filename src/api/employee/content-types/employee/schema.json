@@ -1,0 +1,37 @@
+{
+  "kind": "collectionType",
+  "collectionName": "employees",
+  "info": {
+    "singularName": "employee",
+    "pluralName": "employees",
+    "displayName": "Employee",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "EmployeeName": {
+      "type": "string",
+      "unique": true,
+      "required": true
+    },
+    "Employee_id": {
+      "type": "integer",
+      "required": true,
+      "unique": true,
+      "default": 15
+    },
+    "PhoneNumber": {
+      "type": "biginteger",
+      "unique": true,
+      "required": true
+    },
+    "Email": {
+      "type": "email",
+      "unique": true,
+      "required": true
+    }
+  }
+}

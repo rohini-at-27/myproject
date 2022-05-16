@@ -1,0 +1,60 @@
+{
+  "kind": "collectionType",
+  "collectionName": "orders",
+  "info": {
+    "singularName": "order",
+    "pluralName": "orders",
+    "displayName": "Order",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Name": {
+      "type": "string",
+      "unique": true,
+      "required": true
+    },
+    "MobileNumber": {
+      "type": "integer",
+      "required": true,
+      "unique": true,
+      "default": 12
+    },
+    "Address": {
+      "type": "richtext",
+      "required": true,
+      "minLength": 5
+    },
+    "Sold_by": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "Order_Id": {
+      "type": "integer"
+    },
+    "Expected_delivery_date": {
+      "type": "date",
+      "unique": true,
+      "required": true
+    },
+    "Order_Status": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "Delivery_Partner": {
+      "type": "enumeration",
+      "enum": [
+        "DHL",
+        "bluedart",
+        "Ekart"
+      ],
+      "private": true,
+      "required": true
+    }
+  }
+}

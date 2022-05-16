@@ -1,0 +1,67 @@
+{
+  "kind": "collectionType",
+  "collectionName": "bookmodels",
+  "info": {
+    "singularName": "bookmodel",
+    "pluralName": "bookmodels",
+    "displayName": "Bookmodel",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Language": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "genre": {
+      "type": "string",
+      "unique": true,
+      "required": true
+    },
+    "ISBN": {
+      "type": "biginteger",
+      "unique": true,
+      "required": true
+    },
+    "BookName": {
+      "type": "string",
+      "unique": true,
+      "required": true
+    },
+    "AuthorName": {
+      "type": "string",
+      "unique": true,
+      "required": true
+    },
+    "Edition": {
+      "type": "string",
+      "unique": true,
+      "required": true
+    },
+    "description": {
+      "type": "text",
+      "required": true,
+      "unique": true
+    },
+    "price": {
+      "unique": true,
+      "required": true,
+      "type": "decimal"
+    },
+    "Ratings": {
+      "type": "integer",
+      "unique": true,
+      "required": true,
+      "default": 10
+    },
+    "publisher": {
+      "type": "string",
+      "unique": true,
+      "required": true
+    }
+  }
+}
