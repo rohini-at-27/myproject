@@ -1,0 +1,43 @@
+{
+  "kind": "collectionType",
+  "collectionName": "rohini_book_stores",
+  "info": {
+    "singularName": "rohini-book-store",
+    "pluralName": "rohini-book-stores",
+    "displayName": "Rohini book store",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "BookName": {
+      "type": "text"
+    },
+    "Author": {
+      "type": "string"
+    },
+    "edition": {
+      "type": "string"
+    },
+    "genre": {
+      "type": "enumeration",
+      "enum": [
+        "thriller",
+        "adventure",
+        "comedy",
+        "science friction"
+      ]
+    },
+    "price": {
+      "type": "decimal"
+    },
+    "ratings": {
+      "type": "decimal"
+    },
+    "description": {
+      "type": "text"
+    }
+  }
+}
