@@ -15,11 +15,11 @@
     "Language": {
       "type": "string",
       "required": true,
-      "unique": true
+      "unique": false
     },
     "genre": {
       "type": "string",
-      "unique": true,
+      "unique": false,
       "required": true
     },
     "ISBN": {
@@ -29,38 +29,38 @@
     },
     "BookName": {
       "type": "string",
-      "unique": true,
+      "unique": false,
       "required": true
     },
     "AuthorName": {
       "type": "string",
-      "unique": true,
+      "unique": false,
       "required": true
     },
     "Edition": {
       "type": "string",
-      "unique": true,
+      "unique": false,
       "required": true
     },
     "description": {
       "type": "text",
       "required": true,
-      "unique": true
+      "unique": false
     },
     "price": {
-      "unique": true,
+      "unique": false,
       "required": true,
       "type": "decimal"
     },
     "Ratings": {
       "type": "integer",
-      "unique": true,
+      "unique": false,
       "required": true,
       "default": 20
     },
     "publisher": {
       "type": "string",
-      "unique": true,
+      "unique": false,
       "required": true
     }
   }

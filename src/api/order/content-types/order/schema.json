@@ -14,7 +14,7 @@
   "attributes": {
     "Name": {
       "type": "string",
-      "unique": true,
+      "unique": false,
       "required": true
     },
     "MobileNumber": {
@@ -26,20 +26,20 @@
     "Sold_by": {
       "type": "string",
       "required": true,
-      "unique": true
+      "unique": false
     },
     "Order_Id": {
       "type": "integer"
     },
     "Expected_delivery_date": {
       "type": "date",
-      "unique": true,
+      "unique": false,
       "required": true
     },
     "Order_Status": {
       "type": "string",
       "required": true,
-      "unique": true
+      "unique": false
     },
     "Delivery_Partner": {
       "type": "enumeration",
@@ -48,7 +48,6 @@
         "bluedart",
         "Ekart"
       ],
-      "private": true,
       "required": true
     },
     "Address": {

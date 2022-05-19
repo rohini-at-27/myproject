@@ -14,7 +14,7 @@
   "attributes": {
     "EmployeeName": {
       "type": "string",
-      "unique": true,
+      "unique": false,
       "required": true
     },
     "Employee_id": {
