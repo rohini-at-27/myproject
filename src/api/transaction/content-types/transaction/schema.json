@@ -21,7 +21,7 @@
       ]
     },
     "Transaction_id": {
-      "type": "biginteger",
+      "type": "integer",
       "unique": true,
       "required": true
     }
