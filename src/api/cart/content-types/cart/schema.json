@@ -12,12 +12,17 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "Cart": {
-      "type": "enumeration",
-      "enum": [
-        "Add to favourite",
-        "Buy now"
-      ],
+    "BookName": {
+      "type": "string",
+      "required": true
+    },
+    "Favourite": {
+      "type": "boolean",
+      "default": true,
+      "required": true
+    },
+    "price": {
+      "type": "biginteger",
       "required": true
     }
   }

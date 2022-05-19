@@ -23,11 +23,6 @@
       "unique": true,
       "default": 12
     },
-    "Address": {
-      "type": "richtext",
-      "required": true,
-      "minLength": 5
-    },
     "Sold_by": {
       "type": "string",
       "required": true,
@@ -54,6 +49,10 @@
         "Ekart"
       ],
       "private": true,
+      "required": true
+    },
+    "Address": {
+      "type": "text",
       "required": true
     }
   }

@@ -30,7 +30,7 @@
     "Age": {
       "type": "integer",
       "default": 100,
-      "unique": true,
+      "unique": false,
       "required": true
     },
     "Preference": {
