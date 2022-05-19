@@ -14,7 +14,7 @@
   "attributes": {
     "BookName": {
       "type": "string",
-      "required": true
+      "required": false
     },
     "Favourite": {
       "type": "boolean",
