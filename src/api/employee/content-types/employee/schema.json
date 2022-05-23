@@ -32,6 +32,12 @@
       "type": "email",
       "unique": true,
       "required": true
+    },
+    "sold_to": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::customer.customer",
+      "mappedBy": "sold_by"
     }
   }
 }

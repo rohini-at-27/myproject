@@ -21,9 +21,15 @@
       ]
     },
     "Transaction_id": {
-      "type": "integer",
+      "type": "biginteger",
       "unique": true,
       "required": true
+    },
+    "order": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::order.order",
+      "inversedBy": "transactions"
     }
   }
 }

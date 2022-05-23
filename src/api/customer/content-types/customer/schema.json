@@ -33,17 +33,23 @@
       "unique": false,
       "required": true
     },
-    "Preference": {
-      "type": "enumeration",
-      "enum": [
-        "fiction",
-        "science fiction",
-        "Thriller",
-        "History",
-        "Adventure",
-        "Biography"
-      ],
-      "required": true
+    "bought_books": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::bookmodel.bookmodel",
+      "inversedBy": "customers"
+    },
+    "sold_by": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::employee.employee",
+      "inversedBy": "sold_to"
+    },
+    "order_detail": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::order.order",
+      "mappedBy": "customer"
     }
   }
 }

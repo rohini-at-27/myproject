@@ -12,56 +12,44 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "Language": {
-      "type": "string",
-      "required": true,
-      "unique": false
-    },
-    "genre": {
-      "type": "string",
-      "unique": false,
-      "required": true
-    },
-    "ISBN": {
-      "type": "biginteger",
-      "unique": true,
-      "required": true
-    },
     "BookName": {
       "type": "string",
-      "unique": false,
+      "required": true
+    },
+    "Language": {
+      "type": "enumeration",
+      "enum": [
+        "English",
+        "spanish",
+        "italy",
+        "tamil"
+      ],
       "required": true
     },
     "AuthorName": {
       "type": "string",
-      "unique": false,
       "required": true
     },
-    "Edition": {
-      "type": "string",
-      "unique": false,
+    "Price": {
+      "type": "decimal",
       "required": true
-    },
-    "description": {
-      "type": "text",
-      "required": true,
-      "unique": false
-    },
-    "price": {
-      "unique": false,
-      "required": true,
-      "type": "decimal"
     },
     "Ratings": {
       "type": "integer",
-      "unique": false,
       "required": true,
-      "default": 20
+      "max": 5
     },
-    "publisher": {
-      "type": "string",
-      "unique": false,
-      "required": true
+    "categories": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::category.category",
+      "mappedBy": "bookmodel"
+    },
+    "customers": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::customer.customer",
+      "mappedBy": "bought_books"
     }
   }
 }

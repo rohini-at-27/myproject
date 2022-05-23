@@ -18,10 +18,9 @@
       "required": true
     },
     "MobileNumber": {
-      "type": "integer",
+      "type": "biginteger",
       "required": true,
-      "unique": true,
-      "default": 12
+      "unique": true
     },
     "Sold_by": {
       "type": "string",
@@ -29,7 +28,7 @@
       "unique": false
     },
     "Order_Id": {
-      "type": "integer"
+      "type": "biginteger"
     },
     "Expected_delivery_date": {
       "type": "date",
@@ -53,6 +52,18 @@
     "Address": {
       "type": "text",
       "required": true
+    },
+    "customer": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::customer.customer",
+      "inversedBy": "order_detail"
+    },
+    "transactions": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::transaction.transaction",
+      "mappedBy": "order"
     }
   }
 }
