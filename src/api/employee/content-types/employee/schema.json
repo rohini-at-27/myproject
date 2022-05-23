@@ -33,11 +33,11 @@
       "unique": true,
       "required": true
     },
-    "sold_to": {
+    "employee_id": {
       "type": "relation",
       "relation": "oneToMany",
       "target": "api::customer.customer",
-      "mappedBy": "sold_by"
+      "mappedBy": "employee_Id"
     }
   }
 }

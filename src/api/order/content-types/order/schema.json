@@ -53,15 +53,9 @@
       "type": "text",
       "required": true
     },
-    "customer": {
+    "transaction": {
       "type": "relation",
       "relation": "oneToOne",
-      "target": "api::customer.customer",
-      "inversedBy": "order_detail"
-    },
-    "transactions": {
-      "type": "relation",
-      "relation": "oneToMany",
       "target": "api::transaction.transaction",
       "mappedBy": "order"
     }

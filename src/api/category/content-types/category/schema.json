@@ -16,12 +16,6 @@
       "type": "string",
       "required": true,
       "unique": true
-    },
-    "bookmodel": {
-      "type": "relation",
-      "relation": "manyToOne",
-      "target": "api::bookmodel.bookmodel",
-      "inversedBy": "categories"
     }
   }
 }

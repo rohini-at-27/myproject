@@ -42,14 +42,7 @@
     "categories": {
       "type": "relation",
       "relation": "oneToMany",
-      "target": "api::category.category",
-      "mappedBy": "bookmodel"
-    },
-    "customers": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::customer.customer",
-      "mappedBy": "bought_books"
+      "target": "api::category.category"
     }
   }
 }

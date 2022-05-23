@@ -27,29 +27,18 @@
       "unique": true,
       "required": true
     },
-    "Age": {
-      "type": "integer",
-      "default": 200,
-      "unique": false,
+    "Customer_ID": {
+      "type": "biginteger"
+    },
+    "DOB": {
+      "type": "date",
       "required": true
     },
-    "bought_books": {
-      "type": "relation",
-      "relation": "manyToOne",
-      "target": "api::bookmodel.bookmodel",
-      "inversedBy": "customers"
-    },
-    "sold_by": {
+    "employee_Id": {
       "type": "relation",
       "relation": "manyToOne",
       "target": "api::employee.employee",
-      "inversedBy": "sold_to"
-    },
-    "order_detail": {
-      "type": "relation",
-      "relation": "oneToOne",
-      "target": "api::order.order",
-      "mappedBy": "customer"
+      "inversedBy": "employee_id"
     }
   }
 }
