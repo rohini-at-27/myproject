@@ -29,7 +29,7 @@
     },
     "Age": {
       "type": "integer",
-      "default": 100,
+      "default": 200,
       "unique": false,
       "required": true
     },
